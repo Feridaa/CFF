@@ -7,7 +7,7 @@ const villeDeDepart = document.querySelector(".title h1");
 
 const stationDonnees = (ville, nb) => {
   fetch(
-    `http://transport.opendata.ch/v1/stationboard?station=${ville}&limit=${nb}`
+    `https://transport.opendata.ch/v1/stationboard?station=${ville}&limit=${nb}`
   )
     .then((resultat) => resultat.json())
     //.then((data) => console.log(data))
